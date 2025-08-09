@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Web Page</title>
+</head>
+<body>
+
+<header>
+    <h1>My Assignment Web Page</h1>
+    <p>This page demonstrates HTML lists, tables, multimedia, and forms with various attributes.</p>
+</header>
+
+<section>
+    <h2>Lists</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <ol>
+        <li>Plan your project</li>
+        <li>Write your code</li>
+        <li>Test and deploy</li>
+    </ol>
+</section>
+
+<section>
+    <h2>Table</h2>
+    <table border="1">
+        <tr>
+            <th>Language</th>
+            <th>Usage</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>Structure</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Styling</td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2>Multimedia</h2>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Sample Image" width="300">
+
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <p><a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a></p>
+</section>
+
+<section>
+    <h2>Registration Form</h2>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required autocomplete="name"><br><br>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="3" autocomplete="username"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required autocomplete="email"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +254712345678" pattern="^\+?\d{10,15}$" title="Enter a valid phone number"><br><br>
+
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com" title="Enter a valid URL"><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="account-date">Account Creation Date:</label>
+            <input type="text" id="account-date" name="account-date" value="2025-08-09" readonly><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Security</legend>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6" autocomplete="new-password" title="Password must be at least 6 characters"><br><br>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm password" required autocomplete="new-password"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color"><br><br>
+
+            <label for="language">Preferred Language:</label>
+            <select id="language" name="language" required>
+                <option value="">Select...</option>
+                <option value="english">English</option>
+                <option value="kiswahili">Kiswahili</option>
+                <option value="french">French</option>
+            </select><br><br>
+
+            <p>Subscribe to Newsletter:</p>
+            <input type="radio" id="yes" name="newsletter" value="yes" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="newsletter" value="no">
+            <label for="no">No</label><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 My Assignment Page</p>
+</footer>
+
+</body>
+</html>
